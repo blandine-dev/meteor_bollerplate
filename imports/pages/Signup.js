@@ -1,7 +1,16 @@
 import React from 'react'
+import {Form, Button, Container} from 'semantic-ui-react'
+
 function Signup(props){
     return(
-        <p>Signup</p>
+            <Container>
+            <h1>Inscrivez-vous!</h1>
+            <Form>
+                <Form.Input label="Email" type="email" placeholder="ex: toto@yopmail.com" />
+                <Form.Input label="Mot de passe" type="password" />
+                <Button color="blue">M'inscrire</Button>
+            </Form>
+            </Container>
     )
 }
 
